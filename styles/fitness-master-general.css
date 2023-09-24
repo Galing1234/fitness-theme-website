@@ -1,0 +1,16 @@
+body {
+  font-family: 'Ubuntu', sans-serif ;
+  background-image: url(../assets/fitness-set-background.png) ;
+  background-size: cover ;
+  overflow-x: hidden ;
+}
+
+img {
+  width: 40px ;
+  margin-right: 10px ;
+  margin-left: 5px ;
+}
+
+.person-image {
+  width: 100px ;
+}

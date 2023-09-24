@@ -1,0 +1,41 @@
+.main {
+  display: flex ;
+  margin-top: 90px ;
+  transition: margin-left 0.5s ;
+}
+
+.main-info-section,
+.main-blog-section {
+  display: flex ;
+  flex-direction: column ;
+  text-align: center ;
+}
+
+.main-info-section {
+  font-weight: 600 ;
+} 
+
+.main-blog-section {
+  color: rgb(157, 24, 24) ;
+  font-weight: 600 ;
+}
+
+.main-info-section article,
+.main-blog-section article {
+  margin-bottom: 10px ;
+}
+
+.blog-title {
+  color: black ;
+  font-size: 18px ;
+}
+
+.link {
+  color: rgb(58, 84, 255) ;
+  cursor: pointer ;
+}
+
+.link:hover {
+  text-decoration: underline ;
+  color: rgb(60, 60, 255) ;
+}

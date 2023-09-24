@@ -1,0 +1,33 @@
+.nav {
+  position: fixed ;
+  display: flex ;
+  flex-direction: column ;
+  top: 88px ;
+  bottom: 0 ;
+  left: -165px ;
+  width: 160px ;
+  background-color: rgb(169, 217, 79) ;
+
+  transition: 
+    left 0.5s,
+    width 0.5s ;
+}
+
+.nav-section {
+  display: flex ;
+  font-weight: bold ;
+  align-items: center ;
+  font-size: 16px ;
+  color: rgb(116, 21, 21) ;
+  margin-bottom: 10px ;
+  cursor: pointer ;
+  padding: 2px ;
+
+  transition: 
+    background-color 0.15s,
+    font-size 0.5s ;
+}
+
+.nav-section:hover {
+  background-color: white ;
+}

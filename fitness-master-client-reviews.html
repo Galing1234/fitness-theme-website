@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Master - Client Reviews</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="styles/fitness-master-loader.css">
+  <link rel="stylesheet" href="styles/fitness-master-general.css">
+  <link rel="stylesheet" href="styles/fitness-master-header.css">
+  <link rel="stylesheet" href="styles/fitness-master-nav.css">
+  <link rel="stylesheet" href="styles/fitness-master-main.css">
+  <link rel="stylesheet" href="styles/fitness-master-client-reviews/fitness-master-main.css">
+
+  <script src="src/fitness-master-loading.js"></script>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader">
+
+    </div>
+  </div>
+
+  <header class="header">
+    <section class="header-top-section">
+      <div>
+        <svg width="40px" height="32px" stroke="black" stroke-width="2" class="menu-svg">
+          <path d="M10 10 L40 10" class="first-stroke-menu" />
+          <path d="M10 20 L40 20" class="second-stroke-menu" />
+          <path d="M10 30 L40 30" class="third-stroke-menu" />
+        </svg>
+      </div>
+
+      <div class="logo-div">
+        <div class="fitness-master-logo">
+          FITNESS MASTER
+        </div>
+
+        <div class="unlock-your-potential-logo">
+          UNLOCK YOUR POTENTIAL
+        </div>
+
+        <img src="icons/fitness-icon.png" alt="fitness-icon" class="fitness-icon">
+      </div>
+    </section>
+
+    <section class="header-bottom-section">
+      <div>
+        FITNESS
+      </div>
+
+      <div>
+        &#183;
+      </div>
+
+      <div>
+        TRAINING
+      </div>
+
+      <div>
+        &#183;
+      </div>
+
+      <div>
+        CARDIO
+      </div>
+
+      <div>
+        &#183;
+      </div>
+
+      <div>
+        WEIGHT MACHINES
+      </div>
+
+      <div>
+        &#183;
+      </div>
+
+      <div>
+        SUCCESS
+      </div>
+    </section>
+  </header>
+
+  <nav class="nav">
+    <section class="nav-section training-programs">
+      <article>
+        <img src="icons/training-program-icon.png" alt="training-program-icon">
+      </article>
+
+      <article>
+        TRAINING <br>
+        PROGRAMS
+      </article>
+    </section>
+
+    <section class="nav-section fitness-sessions">
+      <article>
+        <img src="icons/training-session-icon.png" alt="fitness-sessions-icon">
+      </article>
+
+      <article>
+        FITNESS <br>
+        SESSIONS
+      </article>
+    </section>
+    
+    <section class="nav-section blog-section">
+      <article>
+        <img src="icons/health-tips-icon.png" alt="helath-tips-icon">
+      </article>
+
+      <article>
+        BLOG <br>
+        SECTION
+      </article>
+    </section>
+
+    <section class="nav-section reviews">
+      <article>
+        <img src="icons/reviews-icon.png" alt="reviews-icon">
+      </article>
+
+      <article>
+        CLIENT <br>
+        REVIEWS
+      </article>
+    </section>
+  </nav>
+
+  <main class="main">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/person-1-face.png" alt="person-face" class="person-face">
+          </div>
+
+          <div class="slide-person-about">
+            Ryan Mitchell, Software Developer
+          </div>
+
+          <div class="slide-text">
+            &#8221; I've been training with Alex for a few months now, and I can't recommend him enough. His workouts are challenging but fun, and he really knows how to motivate you. I've seen great results in terms of my fitness level and overall health since I started. &#8221;
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/person-2-face.png" alt="person-face" class="person-face">
+          </div>
+
+          <div class="slide-person-about">
+            David Bennett, Marketing Manager
+          </div>
+
+          <div class="slide-text">
+            &#8221; Training with Alex has been a game-changer for me. As a working professional with a busy schedule, his flexibility in scheduling sessions has been a lifesaver. He tailors workouts to my specific needs, and I've not only gotten fitter but also learned a lot about maintaining a healthy lifestyle. &#8221;
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div>
+            <img src="assets/person-3-face.png" alt="person-face" class="person-face">
+          </div>
+
+          <div class="slide-person-about">
+            James Anderson, High School Teacher
+          </div>
+
+          <div class="slide-text">
+            &#8221; I've tried various trainers over the years, but Alex stands out. He's patient and understanding of my limitations, and he designs workouts that are both effective and safe for someone my age. Thanks to him, I've regained strength and mobility that I thought was gone forever. &#8221;
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+
+  </footer>
+
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
+
+    // Initialize Swiper
+    var mySwiper = new Swiper('.swiper-container', {
+      grabCursor: true,
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination', // Specify the pagination container
+        clickable: true 
+      }
+    });
+  </script>
+
+  <script src="src/fitness-master.js"></script>
+</body>
+</html>
